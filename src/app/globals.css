@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Muoto';
+  src: url('https://ext.same-assets.com/2634874883/540682152.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT America Mono';
+  src: url('https://ext.same-assets.com/2634874883/2055177169.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 60 10% 91%;
+    --foreground: 0 0% 3%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3%;
+
+    --primary: 0 0% 3%;
+    --primary-foreground: 60 10% 91%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 3%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 3%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 60 10% 91%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 3%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3%;
+    --foreground: 60 10% 91%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 60 10% 91%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 60 10% 91%;
+
+    --primary: 60 10% 91%;
+    --primary-foreground: 0 0% 3%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 60 10% 91%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 10%;
+    --accent-foreground: 60 10% 91%;
+
+    --destructive: 0 62% 60%;
+    --destructive-foreground: 60 10% 91%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 60 10% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Muoto', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Muoto', system-ui, sans-serif;
+    font-weight: 400;
+  }
+  code, pre {
+    font-family: 'GT America Mono', monospace;
+  }
+}
+
+@layer components {
+  .capital-container {
+    @apply max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .capital-button {
+    @apply bg-[#e05649] hover:bg-[#cc4d42] text-white rounded-full px-8 py-6 text-xl font-normal transition-colors;
+  }
+}
+
+.dark-bg {
+  background-color: #060606;
+}
+
+.light-bg {
+  background-color: #e7e7e0;
+}
+
+.capital-red {
+  color: #e05649;
+}
+
+.capital-red-bg {
+  background-color: #e05649;
+}

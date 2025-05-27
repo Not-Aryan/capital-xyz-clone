@@ -1,0 +1,13 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+[build]
+  command = "cd capital-clone && bun run build"
+  publish = "capital-clone/out"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
