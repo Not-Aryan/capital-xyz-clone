@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Overview
+
+This is a clone of the Capital XYZ website built with Next.js and TypeScript.
+
 ## Getting Started
 
 First, run the development server:
